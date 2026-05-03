@@ -74,4 +74,4 @@ Telegram бот: [@ProzorroBot_bot](https://t.me/ProzorroBot_bot)
 ---
 
 **Prozorro Bot** - ваш помощник в поиске тендеров и планов на платформе Prozorro!
-
+TEST UPDATE 2026
