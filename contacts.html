@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Prozorro Bot</title>
+    <meta name="description" content="Контактна інформація Prozorro Bot. Пропозиції та зауваження щодо роботи Telegram-бота.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html" class="logo-link">Prozorro Bot</a></h1>
+                </div>
+                <nav class="nav">
+                    <a href="about.html">Про нас</a>
+                    <a href="contacts.html">Контакти</a>
+                    <a href="index.html#contacts" onclick="openDonateModal(event)">Донат сайту</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main role="main">
+        <section class="contacts-page">
+            <div class="container">
+                <div class="contacts-page-content">
+                    <h1 class="page-title">Контакти</h1>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h2>Зв'язок з нами</h2>
+                            <p>Пропозиції та зауваження щодо роботи Телеграм-бота пишіть на адресу:</p>
+                            <a href="mailto:prozorrobot100@gmail.com" class="email-link">
+                                <i class="fas fa-envelope"></i>
+                                prozorrobot100@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="back-to-bot">
+                        <a href="index.html" class="cta-button primary large">
+                            <i class="fas fa-home"></i>
+                            Повернутися на головну сторінку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>© 2025 Prozorro Bot. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

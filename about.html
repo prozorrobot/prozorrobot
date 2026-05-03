@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Prozorro Bot</title>
+    <meta name="description" content="Про проєкт Prozorro Bot — команда, місія та інформація для іноземних користувачів.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text"><a href="index.html" class="logo-link">Prozorro Bot</a></div>
+                </div>
+                <nav class="nav">
+                    <a href="about.html">Про нас</a>
+                    <a href="contacts.html">Контакти</a>
+                    <a href="index.html#contacts" onclick="openDonateModal(event)">Донат сайту</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main role="main">
+        <section class="about-page">
+            <div class="container">
+                <div class="about-page-content">
+                    <h1 class="page-title">Про нас</h1>
+
+                    <div class="about-block">
+                        <h2><i class="fas fa-info-circle"></i> Про проєкт</h2>
+                        <p>Prozorro Bot — це незалежний проєкт, створений командою розробників. Ми побачили просту проблему: щоб знайти потрібний тендер на Prozorro, потрібно витрачати багато часу на ручний пошук. Ми вирішили це виправити.</p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2><i class="fas fa-bullseye"></i> Наша місія</h2>
+                        <p>Допомогти українському бізнесу — постачальникам, підприємцям, менеджерам з тендерів — знаходити вигідні державні закупівлі швидко і без зайвих зусиль. Ми хочемо, щоб жоден перспективний тендер не пройшов повз вас через брак часу або інформації.</p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2><i class="fas fa-users"></i> Команда</h2>
+                        <p>Ми — невелика команда розробників та ентузіастів, які вірять що технології мають спрощувати роботу з державними даними. Проєкт розвивається і вдосконалюється завдяки зворотному зв'язку від наших користувачів.</p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2><i class="fas fa-heart"></i> Підтримайте розвиток</h2>
+                        <p>Ви можете підтримати команду донатом. Це допоможе нам розвивати бота, додавати нові функції та покращувати сервіс.</p>
+                        <button class="cta-button primary" onclick="openDonateModal()" style="margin-top: 12px;">
+                            <i class="fas fa-coins"></i>
+                            Донат
+                        </button>
+                    </div>
+
+                    <!-- English section -->
+                    <div class="about-block about-block-en">
+                        <h2><i class="fab fa-telegram"></i> For international users</h2>
+                        <p>Prozorro Bot is a Telegram bot for searching public procurement tenders and plans on the Ukrainian Prozorro platform (<a href="https://prozorro.gov.ua" target="_blank" rel="noopener noreferrer">prozorro.gov.ua</a>).</p>
+                        <p><strong>What the bot can do:</strong></p>
+                        <ul>
+                            <li>Search tenders by keywords, CPV codes, EDRPOU codes and regions</li>
+                            <li>Get TOP-200 most expensive active tenders and procurement plans</li>
+                            <li>Receive instant notifications about new relevant tenders</li>
+                        </ul>
+                        <p style="margin-top: 12px;">An English version of the bot is also available: <a href="https://t.me/ProzorroBot_bot" target="_blank" rel="noopener noreferrer">@ProzorroBot_bot</a></p>
+                    </div>
+
+                    <div class="back-to-bot" style="margin-top: 30px;">
+                        <a href="index.html" class="cta-button primary large">
+                            <i class="fas fa-home"></i>
+                            Повернутися на головну сторінку
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальне вікно доната -->
+    <div id="donateModal" class="modal-overlay" onclick="closeDonateModal(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeDonateModal()">&times;</button>
+            <h3 class="modal-title"><i class="fas fa-coins"></i> Донат сайту</h3>
+            <p class="donate-desc">Якщо бот був корисним — підтримайте розвиток проєкту донатом.</p>
+            <span class="donate-network">USDT — Tron (TRC-20)</span>
+            <div class="donate-address-row">
+                <span class="donate-address" id="donateAddress">TKZDedrTFAsW2CreeoQWeQW9v8ugRtYJBu</span>
+                <button class="copy-btn" onclick="copyAddress()">
+                    <i class="fas fa-copy"></i>
+                    <span id="copyText">Копіювати</span>
+                </button>
+            </div>
+            <p class="donate-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                Надсилайте лише USDT в мережі Tron (TRC-20). Інші активи або мережі будуть втрачені назавжди.
+            </p>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>© 2025 Prozorro Bot. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
